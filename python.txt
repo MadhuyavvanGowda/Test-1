@@ -23,6 +23,7 @@ for contour in contours:
     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
     roi = thresh[y:y + h, x:x + w]
 
+
 # Use Tesseract OCR to recognize the characters in the ROI
 text = pytesseract.image_to_string(roi, config='--psm 11')
 
