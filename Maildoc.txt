@@ -1,0 +1,13 @@
+while true; do
+    DISK_USAGE=$(df -h / | awk 'NR==2 {print $5}')
+    AVAIL_STORAGE=$(df -h / | awk 'NR==2 {print $4}')
+
+    SUBJECT="Disk usage report"
+    MESSAGE="Disk usage: $DISK_USAGE\nAvailable storage: $AVAIL_STORAGE"
+
+#    swaks --to email1,email3 --from email2 --server smtp.example.com:587 --auth LOGIN --auth-user "mmadhu.yavvan@duranctech.com" --auth-password "qwerty7890@M" --tls --tls-verify --no-utf8 --attach-type text/html --attach-name report.html --header "Subject: Disk usage report" --body "$MESSAGE"
+     swaks --to  damodarp@duranctech.com,mmadhu.yavvan@duranctech.com,manojphani.v@duranc.com --from mmadhu.yavvan@duranctech.com --server mail.duranc.com:587 --auth LOGIN --auth-user "mmadhu.yavvan@duranctech.com" --auth-password "qwerty7890@M" --tls --tls-verify  --attach-type text/html --attach-name report.html --header "Subject: Disk usage report" --body "$MESSAGE"
+
+    # Wait for 1 minute
+    sleep 60
+done
