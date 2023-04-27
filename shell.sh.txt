@@ -1,0 +1,10 @@
+echo "Hello World!"
+echo "what is your name"
+read person
+echo "hello hai $person"
+echo "what are you studying"
+read study
+echo "oh iam studying Btech"
+echo "where are you studying"
+read collage 
+echo " iam studying at dell"

@@ -1,0 +1,6 @@
+For Network restart
+sudo service network-manager restart
+
+
+For gateway logs
+duranc-gateway --services=pusher logs

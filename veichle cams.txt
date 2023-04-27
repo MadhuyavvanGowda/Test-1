@@ -1,0 +1,5 @@
+Cloud dashcam is connected to the Car WiFi Kit through the WiFi wireless connection. 
+
+Car WIFi kit requires SIM card with active data subscription to enable BlackVue cloud dashcam to be connected to the cloud service. 
+
+Battery-less with automatic power ON upon supply of power which can be hard-wired to your car through option of Power Magic Pro or Cellink B battery or just ignition power. 

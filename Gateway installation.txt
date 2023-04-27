@@ -1,0 +1,204 @@
+sudo dpkg --configure -a
+
+ sudo apt-get update 
+
+ sudo apt-get upgrade -y 
+
+
+ sudo apt-get install openssh-server -y 
+
+
+ sudo nano /etc/ssh/sshd_config 
+
+ sudo systemctl enable ssh 
+
+
+ sudo adduser gwuser 
+(ask password set Orego@91)
+
+ sudo usermod -aG sudo gwuser 
+(login gw user)
+
+ sudo mkdir /durancgw         feedback
+
+
+ sudo chmod 777 -R /durancgw   
+
+(download the gateway)
+
+ cd ~/Downloads 
+
+
+ sudo mv duranc-gateway.zip /durancgw 
+
+
+ cd /durancgw 
+ 
+
+ unzip duranc-gateway.zip 
+
+ ./install 
+
+                         any error                 source ./install  (permision denied)
+
+
+ nano $HOME/.bashrc
+ source $HOME/.bashrc
+export PATH=$PATH:$HOME/.local/bin
+--------------------------------------------------------------------------------------------------
+
+docker cp duranc_engine:/tmp/logs .    (docker logs)
+ zip -r (filename) logs/engine*
+
+
+
+
+tail -f /var/log/motion/mot
+
+
+tail -f /var/log/motion/motion.log           (motion logs)
+
+duranc-gateway --services=recorder --gzip=true gen_logs --days=1
+
+docker exec -it duranc_engine tail -f /tmp/logs/engine.stdout   (Docker logs)      
+
+du -a /home | sort -n -r | head -n 5     lorge files search
+
+du -a /var | sort -n -r | head -n 10      lorge files search
+
+
+du -a /. | sort -n -r | head -n 10
+
+sudo nano /etc/hosts
+
+
+ 
+ 
+
+
+554472124 Anydesk
+Pa$$w0rd
+
+
+
+pip3 install PyYAML==5.4.1   (gateway error)
+
+source ~/.bashrc    (feedback error_)
+
+
+demo.duranc.com
+damodarp@duranctech.com
+123456
+
+
+echo $HOME
+
+ls -la  hiden files
+ 
+ ipvm.com
+ vamsi@duranc.com
+ IpvmDur@91
+
+duranc-gateway --gzip=true gen_logs --days=3
+
+duranc-gateway Services
+	
+
+duranc-gateway --services=recorder run
+
+ duranc-feedback --services=www start
+
+inxi -F
+--------------------------------------------------------
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+-----------------------------------------------------------------------------------------------
+ rm -fR * (total delet_
+
+pip install Shapely
+
+gateway online cameras not visible issue:
+
+duranc-gateway --services==pusher run
+ pip3 freze | grep aiohttp
+(3.6.2)
+pip3 uninstall aiohttp
+
+www services update issue:
+
+ sudo pip3 install jinga2
+
+
+
+  pip3 freeze | grep yarl
+  pip3 install -U yarl ==1.6.2
+
+ffprobe 'camera url'
+ffmpeg
+
+Corrupted videos issue"
+
+wget -O - https://raw.githubusercontent.com/DurancOy/duranc_bootstrap/master/gateway/init_motion.bash | bash
+
+wget -N http://portal.duranc.com/update
+
+duranc-gateway --gzip=true gen_logs --days=1
+
+duranc-gateway --services=duranc_ssh stop
+
+sudo nano /etc/network/interfaces
+
+rtsp://admin:12345@18.18.18.215:554/live/main    loby camera
+
+
+gateway video clips copy command::: cp (clip id) /home/gwuser/
+
+
+
+ 
+after 3.1.8 install then gateway start its comming any error:below command type
+wget -O - https://raw.githubusercontent.com/DurancOy/duranc_bootstrap/master/gateway/init_localstr.bash | bash
+
+ 
+
+pip3 install duranc-gateway-3.1.8.tar.gz --user
+ 
+ Shimoga 1:30 pm updated but recorder not working..
+ 
+ 
+Aparna Test login damodarp@oregosolutions.in  // 123456 
+-------------------------------------------------------------------------------------------------
+**********************VPN Instalation***********************
+sudo passwd root
+su
+SETTING UP VPN
+1. Install VPN
+
+apt-get install openvpn -y
+systemctl enable openvpn
+
+2. Now Setting up VPN
+
+cd /etc/
+
+chmod 777 -R openvpn
+
+cd /etc/openvpn/
+unzip [openvpn-MOSA-ANJNGR-config.zip]
+cd untangle-vpn/
+mv * ..
+cd ..
+rm -fR untangle-vpn
+rm -f openvpn*.zip
+
+3. Now Test VPN Connectivity
+openvpn --config Duranc-VPN.ovpn
+ 
+ 
+ 
+ 
+ 
+ cd /etc
+chmod 777 -R openvpn   
